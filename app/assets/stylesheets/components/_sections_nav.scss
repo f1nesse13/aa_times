@@ -1,0 +1,31 @@
+.sections-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.sections-links > ul {
+  display: flex;
+  align-items: flex-end;
+}
+
+.sections-links > ul li {
+  padding: 10px;
+  font-family: $sans-serif;
+  font-size: 14px;
+}
+
+.sections-links li:last-of-type a {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.sections-links a:hover {
+  text-decoration: none;
+  background-color: $light-gray;
+}
+
+.sections-links li:last-of-type a:hover {
+  text-decoration: underline;
+  background: none;
+}
