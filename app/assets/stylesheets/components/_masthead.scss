@@ -8,7 +8,7 @@
 
 .language-nav {
 	position: absolute;
-	top: -15px;
+	top: -22px;
 	left: calc(50% - (177.78px/2));
 	background: white;
 	border: 1px solid $light-gray;
@@ -29,6 +29,10 @@
 	display: flex;
 }
 
+.language-nav li:first-of-type a {
+	font-weight: 700;
+}
+
 .logo {
 	max-width: 400px;
 	margin-top: 10px;
@@ -45,6 +49,10 @@
 .masthead-links li {
 	margin-left: 10px;
 	border-right: 1px solid $light-gray;
+}
+
+.masthead-links li:last-child {
+	border-right: none;
 }
 
 .masthead-links button {
