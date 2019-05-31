@@ -4,12 +4,12 @@
   margin-top: 5px;
 }
 
-.sections-links > ul {
+.sections-links>ul {
   display: flex;
   align-items: flex-end;
 }
 
-.sections-links > ul li {
+.sections-links>ul li {
   padding: 10px;
   font-family: $sans-serif;
   font-size: 14px;
@@ -28,4 +28,10 @@
 .sections-links li:last-of-type a:hover {
   text-decoration: underline;
   background: none;
+}
+
+@media (max-width: 1000px) {
+  .sections-nav {
+    display: none;
+  }
 }

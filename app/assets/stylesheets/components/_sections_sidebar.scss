@@ -1,0 +1,103 @@
+.sections-sidebar {
+  position:relative;
+  opacity: 0;
+  display: none;
+}
+
+.expand {
+ opacity: 1;
+ display: block;
+}
+
+ul.sf, ul.bootcamp, ul.online, ul.sales, ul.alumni {
+  display: none;
+}
+
+.sf:hover {
+  ul.sf {
+    display: block;
+  }
+}
+
+.bootcamp:hover {
+  ul.bootcamp {
+    display: block;
+  }
+}
+
+.online:hover {
+  ul.online {
+    display: block;
+  }
+}
+
+.sales:hover {
+  ul.sales {
+    display: block;
+  }
+}
+
+.alumni:hover {
+  ul.alumni {
+    display: block;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  width: 300px;
+  z-index: 14;
+}
+
+.dropdown ul {
+  width: 100%;
+  padding: 25px;
+  background-color: $lightest-gray;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.7);
+}
+
+.inner-menu li:first-of-type {
+  color: $dark-gray;
+  font-size: 12px;
+}
+
+.inner-menu {
+  position: absolute;
+  left: 140px;
+  top: -25px;
+  background-color: $lightest-gray;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  z-index: 15;
+}
+
+
+.dropdown li {
+  position: relative;
+  padding: 5px 20px;
+  margin-top: 10px;
+  font: 700 14px $sans-serif;
+}
+
+.dropdown li:hover {
+  background-color: $light-blue;
+}
+
+.dropdown > ul li:after,
+.dropdown > ul li:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 25%;
+  border-left: 5px solid gray;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  width: 0;
+  height: 0;
+}
+.dropdown > ul li:after {
+  right: 2px;
+  border-left: 5px solid white;
+  z-index: 5;
+}

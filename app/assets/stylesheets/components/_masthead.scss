@@ -80,3 +80,9 @@
 .masthead-links strong {
 	color: green;
 }
+
+@media (max-width: 1000px) {
+	.language-nav {
+		display: none;
+	}
+}

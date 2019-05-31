@@ -62,6 +62,8 @@ iframe {
 }
 
 .form-column {
+  display: flex;
+  flex-direction: column;
   float: right;
   width: 35%;
 }

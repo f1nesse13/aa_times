@@ -45,3 +45,12 @@
 .right-nav i {
   font-size: 22px;
 }
+
+@media (max-width: 1000px) {
+  .left-nav {
+    margin: 0;
+  }
+  .right-nav button {
+    display: none;
+  }
+}
